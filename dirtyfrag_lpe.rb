@@ -49,8 +49,8 @@ class MetasploitModule < Msf::Exploit::Local
           ['URL', 'https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=f4c50a4034e62ab75f1d5cdd191dd5f9c77fdff4'],
           ['URL', 'https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=aa54b1d27fe0c2b78e664a34fd0fdf7cd1960d71'],
         ],
-        'Platform'       => 'linux',
-        'Arch'           => [ARCH_X86_64],
+        'Platform'       => ['linux'],
+        'Arch'           => [ARCH_X64],
         'SessionTypes'   => ['shell', 'meterpreter'],
         'Targets'        => [
           ['Auto (ESP → RxRPC)', {}],
